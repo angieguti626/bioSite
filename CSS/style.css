@@ -1,0 +1,97 @@
+/*  Angelica Gutierrez
+    style.css
+    18 February 2024
+*/
+
+
+/* CSS Reset*/
+body,
+header,
+nav,
+footer,
+img,
+h1,
+nav ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Styles Rules for Header*/
+.mobile h1 {
+    padding: 2%;
+    text-align: center;
+    font-family: "Annapurna SIL", serif;
+    font-weight: 300;
+    font-style: normal;
+    background-color: #fac2cb;
+}
+
+/*Style Rules for Navigation Area*/
+nav {
+    background-color: #f2a3af;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    border-top: 0.5px solid;
+    border-color: #f6eee4;
+    font-size: 1.5em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+nav li a {
+    display: block;
+    color: black;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    text-decoration: none;
+}
+
+/* Styles Rules for Body and Container*/
+body {
+    background-color: #f6eee4;
+}
+
+.container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    margin: 5%;
+}
+
+img {
+    max-width: 60%;
+    max-height: 50%;
+    align-items: center;
+}
+
+.text {
+    font-size: 18px;
+    font-family: "Annapurna SIL", serif;
+    font-style: normal;
+}
+
+/*Style Rules for Footer Content*/
+footer {
+    text-align: center;
+    font-size: 0.95em;
+    background-color: #f2a3af;
+    color: black;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 0%;
+    padding-right: 0%;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
