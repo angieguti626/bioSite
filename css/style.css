@@ -8,6 +8,7 @@
 body,
 header,
 nav,
+main,
 footer,
 img,
 h1,
@@ -58,6 +59,13 @@ nav li a {
 }
 
 /* Styles Rules for Body and Container*/
+main {
+  padding: 2%;
+  font-family: "Lora", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
   background-color: #f6eee4;
 }
@@ -66,13 +74,12 @@ body {
   display: grid;
   align-items: center;
   grid-template-columns: 1fr 1fr;
-  column-gap: 20px;
+  column-gap: 50px;
   margin: 5%;
 }
 
 img {
-  max-width: 60%;
-  max-height: 50%;
+  max-width: 100%;
   align-items: center;
 }
 
@@ -80,6 +87,26 @@ img {
   font-size: 18px;
   font-family: "Annapurna SIL", serif;
   font-style: normal;
+}
+
+/*Style Rules for Hobby Section*/
+aside {
+  text-align: center;
+  font-family: "Annapurna SIL", serif;
+  font-size: 18px;
+}
+
+figure {
+  border: 4px solid #f2a3af;
+  box-shadow: 6px 6px 10px #fac2cb;
+  max-width: 300px;
+  margin: 2% auto;
+
+}
+
+figcaption {
+  padding: 2%;
+  border-top: 4px solid #f2a3af;
 }
 
 /*Style Rules for Footer Content*/
@@ -94,4 +121,79 @@ footer {
   padding-right: 0%;
   font-family: "Poppins", sans-serif;
   font-style: normal;
+}
+
+footer a {
+  color: #f3e6d8;
+  text-decoration: none;
+}
+
+
+/*VIEWPORT INFORMATION*/
+
+/*Media Query For Tablet Viewport*/
+@media screen and (min-width: 620px),
+print {}
+
+/*Media Query For Desktop Viewport*/
+@media screen and (min-width: 1000px),
+print {
+
+  /*Desktop Viewport: Style rules for Nav area*/
+  nav li {
+    font-size: 1.5em;
+  }
+
+  nav li a {
+    padding-top: 0.5em;
+    padding-bottom: .5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+
+  nav li a:hover {
+    color: #2a1f14;
+    background-color: #f6eee4;
+    opacity: 0.5;
+  }
+
+  /*Desktop Viewport: Style rules for main content*/
+  .grid {
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+  }
+
+  aside {
+    grid-column: 1 / span 3;
+  }
+}
+
+/* Media Query for Large Desktop Viewports */
+@media screen and (min-width: 1921px),
+print {
+  body {
+    background: linear-gradient(#f6eee4, #f07083);
+  }
+
+  #wrapper {
+    width: 1920px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  main {
+    background-color: #f6eee4;
+  }
+
+}
+
+/*Media Query for Print*/
+@media print {
+  body {
+    background-color: white;
+    color: black;
+  }
+
 }
