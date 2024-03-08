@@ -12,6 +12,7 @@ main,
 footer,
 img,
 h1,
+h3,
 nav ul {
   margin: 0;
   padding: 0;
@@ -21,6 +22,14 @@ nav ul {
 /* Styles Rules for Header*/
 .mobile h1 {
   padding: 2%;
+  text-align: center;
+  font-family: "Annapurna SIL", serif;
+  font-weight: 300;
+  font-style: normal;
+  background-color: #fac2cb;
+}
+
+.mobile h3{
   text-align: center;
   font-family: "Annapurna SIL", serif;
   font-weight: 300;
@@ -140,18 +149,33 @@ footer a {
   text-decoration: none;
 }
 
+
 /*VIEWPORT INFORMATION*/
 
 /*Media Query For Tablet Viewport*/
 @media screen and (min-width: 620px),
 print {
-   /*Tablet Viewport: Show tab-desk class, hide mobile class*/
-   .tab-desk {
+
+  /*Tablet Viewport: Show tab-desk class, hide mobile class*/
+  .tab-desk {
     display: block;
-   }
+
+  }
 
   .mobile {
     display: none;
+  }
+
+  /*Grid photos in 2 columns*/
+  .grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+  }
+
+  /*Heading in center*/
+  aside {
+    grid-column: 1 / span 2;
   }
 }
 
@@ -177,12 +201,14 @@ print {
     opacity: 0.5;
   }
 
-  /*Desktop Viewport: Style rules for main content*/
+  /*Grid photos in 3 columns*/
   .grid {
+    display: grid;
     grid-template-columns: auto auto auto;
-    gap: 30px;
+    gap: 10px;
   }
 
+  /*Heading in center*/
   aside {
     grid-column: 1 / span 3;
   }
