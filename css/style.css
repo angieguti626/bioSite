@@ -28,6 +28,18 @@ nav ul {
   background-color: #fac2cb;
 }
 
+/*Style Rules for Mobile Viewport*/
+/*Style Rules to Show Mobile Class and Hide Tab-Desk class*/
+.mobile,
+.mobile-tablet {
+  display: block;
+}
+
+.tab-desk,
+.desktop {
+  display: none;
+}
+
 /*Style Rules for Navigation Area*/
 nav {
   background-color: #f2a3af;
@@ -128,12 +140,23 @@ footer a {
   text-decoration: none;
 }
 
-
 /*VIEWPORT INFORMATION*/
 
 /*Media Query For Tablet Viewport*/
 @media screen and (min-width: 620px),
-print {}
+print {
+   /*Tablet Viewport: Show tab-desk class, hide mobile class*/
+   .tab-desk {
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+   }
+
+  .mobile {
+    display: none;
+  }
+}
 
 /*Media Query For Desktop Viewport*/
 @media screen and (min-width: 1000px),
