@@ -148,9 +148,6 @@ print {
    /*Tablet Viewport: Show tab-desk class, hide mobile class*/
    .tab-desk {
     display: block;
-    left: 0;
-    top: 0;
-    width: 100%;
    }
 
   .mobile {
