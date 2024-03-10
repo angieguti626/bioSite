@@ -13,7 +13,10 @@ footer,
 img,
 h1,
 h3,
-nav ul {
+nav ul,
+aside,
+figure,
+figcaption {
   margin: 0;
   padding: 0;
   border: 0;
@@ -29,7 +32,7 @@ nav ul {
   background-color: #fac2cb;
 }
 
-.mobile h3{
+.mobile h3 {
   text-align: center;
   font-family: "Annapurna SIL", serif;
   font-weight: 300;
@@ -183,6 +186,15 @@ print {
 @media screen and (min-width: 1000px),
 print {
 
+  /*Desktop Viewport: Show desktop class, hide mobile-tablet class*/
+  .desktop {
+    display: block;
+  }
+
+  .mobile-tablet {
+    display: none;
+  }
+
   /*Desktop Viewport: Style rules for Nav area*/
   nav li {
     font-size: 1.5em;
@@ -212,6 +224,44 @@ print {
   aside {
     grid-column: 1 / span 3;
   }
+
+  /* Style Rules for Table */
+  table {
+    border: 1px solid #2a1f14;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  caption {
+    font-size: 1em;
+    font-weight: bold;
+    padding: 1%;
+  }
+
+  th,
+  td {
+    border: 1px solid #2a1f14;
+    padding: 1%;
+    font-size: 1em;
+    /*Keeping columns all same size regardless of info *NEW STYLE* */
+    width: 15%;
+    text-align: center;
+  }
+
+  th {
+    background-color: #f2a3af;
+    color: #fff;
+    font-size: 1em;
+  }
+
+  tr:nth-child(odd) {
+    background-color: #deccba;
+  }
+
 }
 
 /* Media Query for Large Desktop Viewports */
