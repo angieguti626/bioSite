@@ -165,7 +165,7 @@ figcaption {
 
 /*Rotating Figures *NEW FEATURE* */
 figure:hover {
-  rotate: 5deg;
+  transform: rotate(5deg);
   transition-duration: 1s;
 }
 
