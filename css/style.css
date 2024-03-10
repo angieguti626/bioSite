@@ -117,12 +117,14 @@ body {
   background-color: #f6eee4;
 }
 
+/*Text Style*/
 p {
   font-size: 18px;
   font-family: "Annapurna SIL", serif;
   font-style: normal;
 }
 
+/*About Page Info*/
 .container {
   display: grid;
   align-items: center;
@@ -192,7 +194,6 @@ print {
   /*Tablet Viewport: Show tab-desk class, hide mobile class*/
   .tab-desk {
     display: block;
-
   }
 
   table{
@@ -247,8 +248,7 @@ print {
     opacity: 0.5;
   }
 
-
-/*Home page Info Format*/
+  /*Home page Info Format*/
 
   .table-column {
     flex-basis: 50%;
@@ -316,7 +316,7 @@ print {
     border: 1px solid #2a1f14;
     padding: 1%;
     font-size: 1em;
-    /*Keeping columns all same size regardless of info *NEW STYLE* */
+    /*Keeping columns all same size regardless of info *NEW FEATURE* */
     width: 15%;
     text-align: center;
   }
