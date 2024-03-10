@@ -151,11 +151,21 @@ figure {
   max-width: 300px;
   margin: 2% auto;
 
+
+  -webkit-transition: all 0.7s ease;
+  -moz-transition: all 1s ease;
+  position: relative;
+
 }
 
 figcaption {
   padding: 2%;
   border-top: 4px solid #f2a3af;
+}
+
+figure:hover {
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
 }
 
 /*Style Rules for Footer Content*/
