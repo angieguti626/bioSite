@@ -42,6 +42,29 @@ figcaption {
 
 /*Style Rules for Mobile Viewport*/
 /*Style Rules to Show Mobile Class and Hide Tab-Desk class*/
+.info, .table-row, .table-column {
+  display: block;
+}
+
+.table-row {
+  display: flex;
+  background-color: #ffe6ea;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.table-row:nth-child(odd) {
+  background-color: #f7edef;
+}
+
+.table-column img {
+  width: 45%;
+  height: auto;
+  display: block;
+  margin: auto;
+  border-radius: .5cm;
+}
+
 .mobile,
 .mobile-tablet {
   display: block;
@@ -94,6 +117,12 @@ body {
   background-color: #f6eee4;
 }
 
+p {
+  font-size: 18px;
+  font-family: "Annapurna SIL", serif;
+  font-style: normal;
+}
+
 .container {
   display: grid;
   align-items: center;
@@ -104,14 +133,10 @@ body {
 
 img {
   max-width: 100%;
+  border-radius: .5em;
   align-items: center;
 }
 
-.text {
-  font-size: 18px;
-  font-family: "Annapurna SIL", serif;
-  font-style: normal;
-}
 
 /*Style Rules for Hobby Section*/
 aside {
@@ -165,6 +190,10 @@ print {
 
   }
 
+  table{
+    display: block;
+  }
+
   .mobile {
     display: none;
   }
@@ -213,6 +242,40 @@ print {
     opacity: 0.5;
   }
 
+
+/*Home page Info Format*/
+
+  .table-column {
+    flex-basis: 50%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .table-column img {
+    width: 45%;
+    height: auto;
+    display: block;
+    margin: auto;
+    border-radius: .5cm;
+  }
+
+  .table-row {
+    display: flex;
+    background-color: #ffe6ea;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .table-row:nth-child(odd) {
+    background-color: #f7edef;
+  }
+
   /*Grid photos in 3 columns*/
   .grid {
     display: grid;
@@ -240,6 +303,7 @@ print {
     font-size: 1em;
     font-weight: bold;
     padding: 1%;
+    border: 1px solid #2a1f14;
   }
 
   th,
