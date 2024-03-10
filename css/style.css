@@ -46,25 +46,6 @@ figcaption {
   display: block;
 }
 
-.table-row {
-  display: flex;
-  background-color: #ffe6ea;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.table-row:nth-child(odd) {
-  background-color: #f7edef;
-}
-
-.table-column img {
-  width: 45%;
-  height: auto;
-  display: block;
-  margin: auto;
-  border-radius: .5cm;
-}
-
 .mobile,
 .mobile-tablet {
   display: block;
