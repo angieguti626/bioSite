@@ -145,6 +145,7 @@ aside {
   font-size: 18px;
 }
 
+figure {
   border: 4px solid #f2a3af;
   box-shadow: 6px 6px 10px #fac2cb;
   max-width: 300px;
